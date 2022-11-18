@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello!</title>
+    <meta name="description" content="description" />
+    <meta name="author" content="author" />
+    <meta name="keywords" content="keywords" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- "one" is a parent of all the elements inside of it. -->
+    <div id="one">
+      <!-- these p tags are 'siblings' to each other and also are siblings to the div id="two" -->
+      <p>Outerest block</p>
+      <p>Outerest block</p>
+      <p>Outerest block</p>
+
+      <!-- because div id="two" is a "child" of div id="one", that means div id="one" is a parent  -->
+      <div id="two">
+        <p>two Levels deep</p>
+        <p>two Levels deep</p>
+        <p>two Levels deep</p>
+
+        <div id="three">
+          <p>three levels deep</p>
+          <p>three levels deep</p>
+          <p>three levels deep</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
